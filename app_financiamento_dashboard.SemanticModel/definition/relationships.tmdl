@@ -1,0 +1,15 @@
+relationship e72fb00f-dec4-42f0-9bd0-826334bd92ee
+	joinOnDateBehavior: datePartOnly
+	fromColumn: situacao_equipes_cnes.dt_comp
+	toColumn: LocalDateTable_28aa7ed9-94ae-4dc7-9169-e4a92f68ce4c.Date
+
+relationship 82bab591-da6c-43d9-a916-2dd659e0c44b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: situacao_equipes_cnes.data_entrada_period
+	toColumn: LocalDateTable_e3c78b68-8d23-42f3-80fb-64642ffc4dc7.Date
+
+relationship ee28be38-0d2d-4338-bc0c-237e14888100
+	joinOnDateBehavior: datePartOnly
+	fromColumn: situacao_equipes_cnes.data_desligamento_period
+	toColumn: LocalDateTable_9e885de7-d499-4925-a35f-2591405b45d1.Date
+

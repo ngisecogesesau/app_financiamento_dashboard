@@ -1,0 +1,239 @@
+table situacao_equipes_cnes
+	lineageTag: 05a14835-98c9-40e0-940b-bce40eee10fb
+
+	column dt_comp
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ea2da62e-c93a-42f5-9bd5-44bf1f7a7d6f
+		summarizeBy: none
+		sourceColumn: dt_comp
+
+		variation Variation
+			isDefault
+			relationship: e72fb00f-dec4-42f0-9bd0-826334bd92ee
+			defaultHierarchy: LocalDateTable_28aa7ed9-94ae-4dc7-9169-e4a92f68ce4c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cnes
+		dataType: int64
+		formatString: 0
+		lineageTag: 969ce457-c10d-45ad-ae96-870b23d187dc
+		summarizeBy: sum
+		sourceColumn: cnes
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipe_ine
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e6cf0e8-1bc3-445a-94a3-8b4a8af4dc05
+		summarizeBy: sum
+		sourceColumn: equipe_ine
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_estabelecimento
+		dataType: string
+		lineageTag: c62ad3ad-f1b3-4cd9-88be-110399e24514
+		summarizeBy: none
+		sourceColumn: nome_estabelecimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_equipe
+		dataType: int64
+		formatString: 0
+		lineageTag: 57f2c02a-cf2c-4509-a752-159e7bef9dc6
+		summarizeBy: sum
+		sourceColumn: tipo_equipe
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipe_nome
+		dataType: string
+		lineageTag: 8c844414-ad7c-4087-9af3-b1ddf8bdcc35
+		summarizeBy: none
+		sourceColumn: equipe_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column profissional_cns
+		dataType: string
+		lineageTag: 23be71e5-1514-4701-acd6-2e5c346f94df
+		summarizeBy: none
+		sourceColumn: profissional_cns
+
+		annotation SummarizationSetBy = Automatic
+
+	column profissional_nome
+		dataType: string
+		lineageTag: db529217-33cc-4079-8616-a87642b54851
+		summarizeBy: none
+		sourceColumn: profissional_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column cbo_cod
+		dataType: int64
+		formatString: 0
+		lineageTag: af9a7985-0021-4eb8-9f18-f076d0364e92
+		summarizeBy: sum
+		sourceColumn: cbo_cod
+
+		annotation SummarizationSetBy = Automatic
+
+	column cbo_descricao
+		dataType: string
+		lineageTag: cdc80d55-4653-4eb1-83c7-122e4cb86003
+		summarizeBy: none
+		sourceColumn: cbo_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_entrada
+		dataType: int64
+		formatString: 0
+		lineageTag: 4deb4d8b-2aed-4f75-9ace-3bd46fff843d
+		summarizeBy: sum
+		sourceColumn: data_entrada
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_entrada_period
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4c4218f7-7ad9-4cda-bcac-f6e08baabf4c
+		summarizeBy: none
+		sourceColumn: data_entrada_period
+
+		variation Variation
+			isDefault
+			relationship: 82bab591-da6c-43d9-a916-2dd659e0c44b
+			defaultHierarchy: LocalDateTable_e3c78b68-8d23-42f3-80fb-64642ffc4dc7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data_desligamento
+		dataType: int64
+		formatString: 0
+		lineageTag: c38ec91c-6594-4048-bb99-d53243b73b48
+		summarizeBy: sum
+		sourceColumn: data_desligamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_desligamento_period
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 02dbe18d-e2c3-4762-9d51-f0a924305145
+		summarizeBy: none
+		sourceColumn: data_desligamento_period
+
+		variation Variation
+			isDefault
+			relationship: ee28be38-0d2d-4338-bc0c-237e14888100
+			defaultHierarchy: LocalDateTable_9e885de7-d499-4925-a35f-2591405b45d1.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column equipe_dt_desativacao
+		dataType: string
+		lineageTag: 81a55ce6-6bd2-4918-a3f7-0e42c3360a8e
+		summarizeBy: none
+		sourceColumn: equipe_dt_desativacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column profissional_ativo
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 35935d4a-d2bd-414e-a8c4-dbc61e5d9a7d
+		summarizeBy: none
+		sourceColumn: profissional_ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column falta_enf
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e4b50a7f-fa76-4601-8b4a-12732fe20113
+		summarizeBy: none
+		sourceColumn: falta_enf
+
+		annotation SummarizationSetBy = Automatic
+
+	column falta_med
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9d27e7f9-3d96-447a-a90f-99dc4eaba915
+		summarizeBy: none
+		sourceColumn: falta_med
+
+		annotation SummarizationSetBy = Automatic
+
+	column falta_acs
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5a0e9810-3032-47c3-bef2-1a3c342d0eda
+		summarizeBy: none
+		sourceColumn: falta_acs
+
+		annotation SummarizationSetBy = Automatic
+
+	column falta_tecenf_ou_auxenf
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 0031e7cb-a087-47d4-b55b-f9fdb685507b
+		summarizeBy: none
+		sourceColumn: falta_tecenf_ou_auxenf
+
+		annotation SummarizationSetBy = Automatic
+
+	column hipotese_suspensao_proporcional
+		dataType: double
+		lineageTag: 9d1c35bc-07e2-43fd-82ac-4c5b6fa8f49c
+		summarizeBy: sum
+		sourceColumn: hipotese_suspensao_proporcional
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column suspensao_proporcional
+		dataType: double
+		lineageTag: 67bba7ee-0aba-491c-a0a9-994278bf5c17
+		summarizeBy: sum
+		sourceColumn: suspensao_proporcional
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column situacao_equipe
+		dataType: string
+		lineageTag: a679a71f-5bd0-4628-bda4-eb0768d7fe47
+		summarizeBy: none
+		sourceColumn: situacao_equipe
+
+		annotation SummarizationSetBy = Automatic
+
+	partition situacao_equipes_cnes = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\ravi.pellizzi\Documents\app_financiamento\data_tratado\situacao_equipes_cnes.xlsx"), null, true),
+				    situacao_equipes_cnes_Sheet = Fonte{[Item="situacao_equipes_cnes",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(situacao_equipes_cnes_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"dt_comp", type date}, {"cnes", Int64.Type}, {"equipe_ine", Int64.Type}, {"nome_estabelecimento", type text}, {"tipo_equipe", Int64.Type}, {"equipe_nome", type text}, {"profissional_cns", type any}, {"profissional_nome", type text}, {"cbo_cod", Int64.Type}, {"cbo_descricao", type text}, {"data_entrada", Int64.Type}, {"data_entrada_period", type date}, {"data_desligamento", Int64.Type}, {"data_desligamento_period", type date}, {"equipe_dt_desativacao", type any}, {"profissional_ativo", type logical}, {"falta_enf", type logical}, {"falta_med", type logical}, {"falta_acs", type logical}, {"falta_tecenf_ou_auxenf", type logical}, {"hipotese_suspensao_proporcional", type number}, {"suspensao_proporcional", type number}, {"situacao_equipe", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "2d729624746c379458bc",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8d1a5f899919092872c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":25.714285714285715,\"z\":0,\"width\":1227.192118226601,\"height\":579.9014778325123,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"situacao_equipes_cnes.dt_comp.Variation.Hierarquia de datas.Ano\"},{\"queryRef\":\"situacao_equipes_cnes.dt_comp.Variation.Hierarquia de datas.Mês\"},{\"queryRef\":\"Sum(situacao_equipes_cnes.equipe_ine)\"},{\"queryRef\":\"situacao_equipes_cnes.falta_acs\"},{\"queryRef\":\"situacao_equipes_cnes.falta_enf\"},{\"queryRef\":\"situacao_equipes_cnes.falta_med\"},{\"queryRef\":\"situacao_equipes_cnes.falta_tecenf_ou_auxenf\"},{\"queryRef\":\"Sum(situacao_equipes_cnes.hipotese_suspensao_proporcional)\"},{\"queryRef\":\"Sum(situacao_equipes_cnes.suspensao_proporcional)\"},{\"queryRef\":\"situacao_equipes_cnes.situacao_equipe\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"situacao_equipes_cnes\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"dt_comp\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"situacao_equipes_cnes.dt_comp.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"dt_comp Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"dt_comp\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"situacao_equipes_cnes.dt_comp.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"dt_comp Mês\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"equipe_ine\"},\"Name\":\"Sum(situacao_equipes_cnes.equipe_ine)\",\"NativeReferenceName\":\"equipe_ine\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"falta_acs\"},\"Name\":\"situacao_equipes_cnes.falta_acs\",\"NativeReferenceName\":\"falta_acs\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"falta_enf\"},\"Name\":\"situacao_equipes_cnes.falta_enf\",\"NativeReferenceName\":\"falta_enf\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"falta_med\"},\"Name\":\"situacao_equipes_cnes.falta_med\",\"NativeReferenceName\":\"falta_med\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"falta_tecenf_ou_auxenf\"},\"Name\":\"situacao_equipes_cnes.falta_tecenf_ou_auxenf\",\"NativeReferenceName\":\"falta_tecenf_ou_auxenf\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"hipotese_suspensao_proporcional\"},\"Name\":\"Sum(situacao_equipes_cnes.hipotese_suspensao_proporcional)\",\"NativeReferenceName\":\"hipotese_suspensao_proporcional\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"suspensao_proporcional\"},\"Name\":\"Sum(situacao_equipes_cnes.suspensao_proporcional)\",\"NativeReferenceName\":\"suspensao_proporcional\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"situacao_equipe\"},\"Name\":\"situacao_equipes_cnes.situacao_equipe\",\"NativeReferenceName\":\"situacao_equipe1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 579.90,
+          "width": 1227.19,
+          "x": 0.00,
+          "y": 25.71,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

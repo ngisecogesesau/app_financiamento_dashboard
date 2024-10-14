@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../app_financiamento_dashboard.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

@@ -1,0 +1,24 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["situacao_equipes_cnes"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.130.930.0 (24.06)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table situacao_equipes_cnes
+ref table DateTableTemplate_24a958a4-e098-43c7-9553-83a598b692c9
+ref table LocalDateTable_28aa7ed9-94ae-4dc7-9169-e4a92f68ce4c
+ref table LocalDateTable_e3c78b68-8d23-42f3-80fb-64642ffc4dc7
+ref table LocalDateTable_9e885de7-d499-4925-a35f-2591405b45d1
+
+ref cultureInfo pt-BR
+
